@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <style>
+        
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("background.jpeg");
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.header1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header1 li {
+    display: inline;
+}
+
+.header1 a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header1 a:hover {
+    background-color:aqua;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.video-container {
+    margin: 10px;
+    border: 2px solid #d31818;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color:	 #6bc7be;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="download.png" alt="Logo">
+        </div>
+        <nav>
+            <ul class="header1">
+                <li><a href="C:\Users\devendra pratap sing\Desktop\e cell\home.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="C:\Users\devendra pratap sing\Desktop\e cell\galary.html">photos</a></li>
+                <li><a href="#team">team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+        </nav>
+        </header>
+    <div class="gallery">
+        <div class="video-container">
+            <video controls>
+                <source src="4.mp4" type="video/mp4">
+              
+            </video>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="2.mp4" type="video/mp4">
+              
+            </video>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="3.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="5.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="6.mp4" type="video/mp4">
+               
+            </video>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="7.mp4" type="video/mp4">
+               
+            </video>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="8.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        <!-- Add more video containers as needed -->
+    </div>
+    <script>
+        // scripts.js
+
+document.addEventListener("DOMContentLoaded", function() {
+    const videos = document.querySelectorAll('video');
+
+    videos.forEach(video => {
+        video.addEventListener('mouseover', function() {
+            this.play();
+        });
+
+        video.addEventListener('mouseout', function() {
+            this.pause();
+        });
+    });
+});
+
+    </script>
+</body>
+</html>
+
+

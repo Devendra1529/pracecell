@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Cell Homepage</title>
+   <style>
+    
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("background5.webp");
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.nav1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav1 li {
+    display: inline;
+}
+
+.nav1 a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav1 a:hover {
+    background-color: #2c9162;
+}
+
+.section2 {
+    background: url('hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.section1 h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.section1 p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.section1 button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.section1 :hover{
+    background-color: #aa3a88;
+}
+
+.section1 button:hover {
+    background-color: #0056b3;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.about-section{
+    background-color:aliceblue;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.team-section,
+.contact-section {
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:aliceblue;
+
+}
+
+
+.team-member {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #9eb7cf;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+#hover1:hover {
+    transform: scale(3.1);
+}
+
+.team-member img {
+    height: 100px;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="download.png" alt="E-Cell Logo">
+        </div>
+        <nav>
+            <ul class="nav1">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="C:\Users\devendra pratap sing\Desktop\e cell\galary.html">photos</a></li>
+                <li><a href="C:\Users\devendra pratap sing\Desktop\e cell\vidio.html">videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="section2">
+        <div class="section1">
+            <h1>Welcome to E-Cell</h1>
+            <p>Empowering Entrepreneurs of Tomorrow</p>
+            <button onclick="location.href='#about'">know more</button>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <h4> The ABES Engineering college E-CELL is a dedicated service of the college that caters
+            to innovative young entrepreneurs and promotes the pursuit of innovative and creation.
+            We believe passionately in the power of young, their developing and creative brains
+            and how such innovative abilities  my transform the country's future.
+
+            We are a group dedicated to fostering entrepreneurial spirit among students. Our mission is to support, nurture, and empower young entrepreneurs.</h4>
+    </section>
+    
+    
+    
+    <section id="team" class="team-section">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="pre.jpg" alt="Team Member 1" id="hover1">
+            <h3>Yash mishra</h3>
+            <p>President</p>
+        </div>
+        <div class="team-member">
+            <img src="vice.jpg" alt="Team Member 2" id="hover1">
+            <h3>Ayushmaan kushwaha</h3>
+            <p>Vice President</p>
+        </div>
+        <div class="team-member">
+            <img src="socil.jpg" alt="Team Member 3" id="hover1">
+            <h3>Dhruv gangwani</h3>
+            <p>social media coordinator</p>
+        </div>
+        <div class="team-member">
+            <img src="tre.jpg" alt="Team Member 4" id="hover1">
+            <h3>Sharthak gupta</h3>
+            <p>Treasurer</p>
+        </div>
+        <div class="team-member">
+            <img src="stu cor.jpg" alt="Team Member 5" id="hover1">
+            <h3>Akshita singh</h3>
+            <p>Student coordinator</p>
+        </div>
+        <div class="team-member">
+            <img src="film coo.jpg" alt="Team Member 6" id="hover1">
+            <h3>Shikhar shaurya</h3>
+            <p>Filmography coordinator</p>
+        </div>
+        
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <a href="https://www.linkedin.com/in/ecell-abes-ec-4a4240172?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">linkedin</a>
+        <a href="https://www.instagram.com/ecell_abesec?igsh=MTFtMm84Mmo3N2Y0eQ==">instagram</a>
+    </section>
+
+    <footer>
+        <p>Made by Devendra pratap singh</p>
+    </footer>
+
+    
+</body>
+</html>
